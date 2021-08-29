@@ -1,0 +1,40 @@
+$mainColor: #CBD5E0;
+$secondaryColor: #E2E8F0;
+$gray50: #F7FAFC;
+$gray200: #E2E8F0;
+
+body {
+  background-color: $mainColor;
+}
+
+.box {
+  box-shadow: 5px 10px;
+  width: 500px;
+}
+
+.header-item {
+  width: 100%;
+}
+
+.navbar {
+  height: 80px;
+  border: 0.5px solid $secondaryColor;
+
+  &__button-item {
+    margin: 15px;
+    background-color: $gray50;
+    border: 0.5px solid $gray200;
+  }
+
+  &__icon-item {
+    padding-top: 24px;
+    text-align: center;
+    width: 120px;
+    border-right: 0.5px solid $gray200;
+    border-left: 0.5px solid $gray200;
+
+    &:hover {
+      background-color: $gray50;
+    }
+  }
+}
