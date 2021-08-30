@@ -1,9 +1,8 @@
-import './../style.scss'
 import {useDispatch} from "react-redux";
 import {useForm} from "react-hook-form";
 import {Box, Button, Flex, FormControl} from "@chakra-ui/react";
-import {HeaderItem} from "./HeaderItem";
-import {InputForm} from "./InputForm";
+import {HeaderItem} from "../HeaderItem";
+import {InputForm} from "../InputForm";
 
 export const Login = () => {
 

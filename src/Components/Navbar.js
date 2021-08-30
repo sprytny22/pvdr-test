@@ -1,4 +1,3 @@
-import '../style.scss'
 import {
     Flex,
     Stack,
@@ -13,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import {ChevronDownIcon, SettingsIcon} from "@chakra-ui/icons";
 import { BiLogIn } from "react-icons/bi";
+import {Link} from "react-router-dom";
 
 export const Navbar = () => {
     return (
@@ -24,8 +24,8 @@ export const Navbar = () => {
                             Configuration
                         </MenuButton>
                         <MenuList minWidth="240px">
-                            <MenuItemOption value="asc">Serial Interface Configuration</MenuItemOption>
-                            <MenuItemOption value="desc">Network Configuration</MenuItemOption>
+                            <MenuItemOption value="asc"><Link to="/serial">Serial Interface Configuration</Link></MenuItemOption>
+                            <MenuItemOption value="desc"><Link to="/network">Network Configuration</Link></MenuItemOption>
                         </MenuList>
                     </Menu>
                 </Stack>

@@ -2,6 +2,7 @@ $mainColor: #CBD5E0;
 $secondaryColor: #E2E8F0;
 $gray50: #F7FAFC;
 $gray200: #E2E8F0;
+$gray500: #718096;
 
 body {
   background-color: $mainColor;
@@ -37,4 +38,56 @@ body {
       background-color: $gray50;
     }
   }
+}
+
+.routing-bar {
+  margin-top: 5px;
+  background-color: $gray50;
+  height: 48px;
+
+  &__icon-item {
+    padding-top: 10px;
+    text-align: center;
+    width: 48px;
+    height: 100%;
+  }
+
+  &__label {
+    text-align: left;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-left: 10px;
+  }
+}
+
+.component-container {
+  padding: 0 0 2em 2em;
+}
+
+.footer {
+  background-color: aquamarine;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+.item-info {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  float: left;
+  padding-right: 20px;
+  &__header {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__content {
+    color: $gray500;
+  }
+}
+
+.cb {
+  clear: both;
 }
